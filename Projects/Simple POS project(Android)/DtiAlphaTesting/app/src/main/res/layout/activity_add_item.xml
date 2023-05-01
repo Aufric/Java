@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dtibackground"
+    tools:context=".AddItemActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/productConstraintLayout"
+        android:layout_width="393dp"
+        android:layout_height="641dp"
+        android:layout_marginStart="-22dp"
+        android:layout_marginLeft="-22dp"
+        android:layout_marginTop="102dp"
+        android:layout_marginBottom="108dp"
+        android:background="@drawable/dashboardmenu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.688"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textProductQrBarcode"
+            android:layout_width="327dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="55dp"
+            android:gravity="center_horizontal"
+            android:text="QR/BARCODE NUMBER"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editProductName"
+            android:layout_width="320dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="78dp"
+            android:background="@drawable/additem_box"
+            android:hint="Product Name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textProductQrBarcode" />
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/editProductCategory"
+            android:layout_width="320dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/additem_box"
+            android:hint="Category"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editProductName">
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinnerCategory"
+                android:layout_width="268dp"
+                android:layout_height="45dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editProductPrice"
+            android:layout_width="320dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/additem_box"
+            android:hint="Price"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editProductCategory" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnItemCancelbutton"
+            android:layout_width="100dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginLeft="29dp"
+            android:layout_marginBottom="57dp"
+            android:background="@drawable/additem_button"
+            android:text="Cancel"
+            android:textColor="#AEAEAE"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.12"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnItemAddbutton"
+            android:layout_width="100dp"
+            android:layout_height="47dp"
+            android:layout_marginEnd="29dp"
+            android:layout_marginRight="29dp"
+            android:layout_marginBottom="57dp"
+            android:text="Add"
+            android:background="@drawable/additem_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.807"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
